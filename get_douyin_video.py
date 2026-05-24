@@ -1,0 +1,15 @@
+# coding:utf-8
+# @Author:xb
+# @Time: 2024/3/13 20:21
+# @File:get_douyin_video.py
+import requests
+import json
+url = 'https://www.douyin.com/?recommend=1'
+headers = {
+    'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+'Cookie':'ttwid=1%7C7fOMZllfC-3_judevXH6KK8GuD3zuhKhTHeMe8ADB4I%7C1711502099%7C300c74f4ce25e8b0ba5e0e033391d70d58adc660c8fc6be2e196c315ada5e4d7; douyin.com; device_web_cpu_core=12; device_web_memory_size=8; architecture=amd64; dy_swidth=1920; dy_sheight=1080; csrf_session_id=37b11971f67491d2b77272eca88cf9bc; strategyABtestKey=%221711502103.327%22; FORCE_LOGIN=%7B%22videoConsumedRemainSeconds%22%3A180%7D; volume_info=%7B%22isUserMute%22%3Afalse%2C%22isMute%22%3Atrue%2C%22volume%22%3A0.5%7D; passport_csrf_token=4b0906201d974fe3b832fc25bdf64d50; passport_csrf_token_default=4b0906201d974fe3b832fc25bdf64d50; bd_ticket_guard_client_web_domain=2; odin_tt=5a922ed135b8e9f1a1362676135a54d5cc778bfe81e4d2be7f4d492f3eecbb18902df0859afcf6d6b6a1216cfac40c993706d06a30c378cc7dbd27a3bea234293ff190a306418d944f53171ecb4fecab; xgplayer_user_id=795784490318; xg_device_score=28.973364542677082; download_guide=%223%2F20240327%2F0%22; pwa2=%220%7C0%7C3%7C0%22; stream_recommend_feed_params=%22%7B%5C%22cookie_enabled%5C%22%3Atrue%2C%5C%22screen_width%5C%22%3A1920%2C%5C%22screen_height%5C%22%3A1080%2C%5C%22browser_online%5C%22%3Atrue%2C%5C%22cpu_core_num%5C%22%3A12%2C%5C%22device_memory%5C%22%3A8%2C%5C%22downlink%5C%22%3A1.45%2C%5C%22effective_type%5C%22%3A%5C%223g%5C%22%2C%5C%22round_trip_time%5C%22%3A900%7D%22; bd_ticket_guard_client_data=eyJiZC10aWNrZXQtZ3VhcmQtdmVyc2lvbiI6MiwiYmQtdGlja2V0LWd1YXJkLWl0ZXJhdGlvbi12ZXJzaW9uIjoxLCJiZC10aWNrZXQtZ3VhcmQtcmVlLXB1YmxpYy1rZXkiOiJCUEVVZDB0UlUrTVhncUFGNm9wdGM2THZqaUtJdDk0RHFGeDhsWmU4NFE3Q2pWa1lTVDhTaHJqOHkrdWFQb1ZNNnNoZ3diaHdMUnh6cm5sa0hIc3ZkNkk9IiwiYmQtdGlja2V0LWd1YXJkLXdlYi12ZXJzaW9uIjoxfQ%3D%3D; home_can_add_dy_2_desktop=%221%22; tt_scid=Fx-ZGBMaj34PNl5hbhFL.5XMpdgOkJjXqvaIsQx.aJwCAbZcmg.ptwsi1Xv0tEBt5d4e; msToken=PbQ6QjA63QEIi0Gjmwq2qgkIl8L4eq7x5lvpZgylYsA9nMBCnsPagyN5Wh1QIOpVX2_iK5xQiiMAUmP_zmTsJZp0t4IuBEeFDHrVr6vZc91i2HwPK03wiw3-DNud; IsDouyinActive=false; msToken=EbsUr0selekVunn8gCLxwMIDuc-6lF9Ya2m2Mo0PV_0vxLyiZ4c1NgYs_8sW9Xs_XjzYB7QD4oWRPz8NGTOLposhYSwmSHwBcNTyw4-4FE50MHBQeNP_qtGIfLGg; __ac_nonce=06603e823004697749b56; stream_player_status_params=%22%7B%5C%22is_auto_play%5C%22%3A0%2C%5C%22is_full_screen%5C%22%3A0%2C%5C%22is_full_webscreen%5C%22%3A0%2C%5C%22is_mute%5C%22%3A1%2C%5C%22is_speed%5C%22%3A1%2C%5C%22is_visible%5C%22%3A0%7D%22; __ac_signature=_02B4Z6wo00f01IYQm6AAAIDDu7mBPXukUvyGMJ8AAEeMeIgaMT59plBHHjV7hneh0IMRr4Sn0tZAnpL96bPmU4n7gBJUd7alez9JJOY8Uya3TZ-l20joAsFVrKQ5eBCVP2HX2PsAfyJznr7d92; __ac_referer=https://www.douyin.com/?recommend=1'
+}
+print(1)
+response = requests.get(url=url,headers=headers)
+
+print(response.text)
